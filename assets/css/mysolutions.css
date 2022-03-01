@@ -59,7 +59,10 @@
 }
 
 @keyframes rotate_inf {
-    0% {transform: rotate(0deg);}
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(-90deg);}
+    50%{transform: rotate(-180deg);}
+    75%{transform: rotate(-270deg);}
     100%{transform: rotate(-360deg);}
 }
 
@@ -94,4 +97,35 @@
     0%{right: 20%;}
     50%{right: calc(100% - 60px);}
     100%{right: 20%;}
+}
+
+ .ex-13-button:hover .ex-13-top-white {
+    animation-name: right_turn;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: left_turn;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes right_turn {
+    0%{left: 10%;}
+    20%{left: 100%; top: -10px;}
+    40%{left: 100%; top:55px;}
+    60%{left: -10px; top: 55px;}
+    80%{left: -10px; top: -10px;}
+    100%{left:10%;}
+}
+
+@keyframes left_turn {
+    0%{right: 20%;}
+    20%{right: calc(100% - 38px); bottom: -10px;}
+    40%{right: calc(100% - 38px); bottom:55px;}
+    60%{right: -10px; bottom: 55px;}
+    80%{right: -10px; bottom: -10px;}
+    100%{right: 20%; bottom: -10px;}
 }
