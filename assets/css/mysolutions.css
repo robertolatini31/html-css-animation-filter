@@ -32,3 +32,21 @@
     filter: grayscale();
 }
 
+.ex-7-img:hover {
+    filter: brightness(0.7) sepia(0.6);
+    transition: all 1s; 
+}
+
+.ex-8-img:hover {
+    filter: brightness(0.7) grayscale(0.7);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.ex-9-img:hover {
+    filter: brightness(0.7) grayscale(0.7);
+    border-radius: 20px;
+    margin: 0%;
+    width: 577px;
+    transition: 1s;
+}
