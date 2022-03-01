@@ -55,19 +55,11 @@
     animation-name: rotate_inf;
     animation-iteration-count: infinite;
     animation-duration: 1s;
+    animation-timing-function: linear;
 }
 
 @keyframes rotate_inf {
     0% {transform: rotate(0deg);}
-    10%{transform: rotate(-36deg);}
-    20%{transform: rotate(-72deg);}
-    30%{transform: rotate(-108deg);}
-    40%{transform: rotate(-144deg);}
-    50%{transform: rotate(-180deg);}
-    60%{transform: rotate(-216deg);}
-    70%{transform: rotate(-252deg);}
-    80%{transform: rotate(-288deg);}
-    90%{transform: rotate(-324deg);}
     100%{transform: rotate(-360deg);}
 }
 
@@ -78,13 +70,6 @@
 
 @keyframes rotate {
     0% {transform: rotate(0deg);}
-    10%{transform: rotate(36deg);}
-    20%{transform: rotate(72deg);}
-    30%{transform: rotate(108deg);}
-    40%{transform: rotate(144deg);}
-    50%{transform: rotate(180deg);}
-    60%{transform: rotate(216deg);}
-    70%{transform: rotate(252deg);}
     80%{transform: rotate(270deg);}
     100%{transform: rotate(0deg);}
 }
@@ -100,49 +85,13 @@
 }
 
 @keyframes slide_top_right {
-    0%{left: 20%;}
-    5%{left: 25%;}
-    10%{left: 30%;}
-    15%{left: 35%;}
-    20%{left: 40%;}
-    25%{left: 45%;}
-    30%{left: 50%;}
-    35%{left: 55%;}
-    40%{left: 60%;}
-    45%{left: 65%;}
-    50%{left: 69%;}
-    55%{left: 65%;}
-    60%{left: 60%;}
-    65%{left: 55%;}
-    70%{left: 50%;}
-    75%{left: 45%;}
-    80%{left: 40%;}
-    85%{left: 35%;}
-    90%{left: 30%;}
-    95%{left: 25%;}
-    100%{left: 20%;}
+    0%{left: 10%;}
+    50%{left: calc(100% - 60px);}
+    100%{left: 10%;}
 }
 
 @keyframes slide_bottom_left {
     0%{right: 20%;}
-    5%{right: 25%;}
-    10%{right: 30%;}
-    15%{right: 35%;}
-    20%{right: 40%;}
-    25%{right: 45%;}
-    30%{right: 50%;}
-    35%{right: 55%;}
-    40%{right: 60%;}
-    45%{right: 65%;}
-    50%{right: 69%;}
-    55%{right: 65%;}
-    60%{right: 60%;}
-    65%{right: 55%;}
-    70%{right: 50%;}
-    75%{right: 45%;}
-    80%{right: 40%;}
-    85%{right: 35%;}
-    90%{right: 30%;}
-    95%{right: 25%;}
+    50%{right: calc(100% - 60px);}
     100%{right: 20%;}
 }
