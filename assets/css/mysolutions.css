@@ -88,3 +88,61 @@
     80%{transform: rotate(270deg);}
     100%{transform: rotate(0deg);}
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: slide_top_right;
+    animation-duration: 1s;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: slide_bottom_left;
+    animation-duration: 1s;
+}
+
+@keyframes slide_top_right {
+    0%{left: 20%;}
+    5%{left: 25%;}
+    10%{left: 30%;}
+    15%{left: 35%;}
+    20%{left: 40%;}
+    25%{left: 45%;}
+    30%{left: 50%;}
+    35%{left: 55%;}
+    40%{left: 60%;}
+    45%{left: 65%;}
+    50%{left: 69%;}
+    55%{left: 65%;}
+    60%{left: 60%;}
+    65%{left: 55%;}
+    70%{left: 50%;}
+    75%{left: 45%;}
+    80%{left: 40%;}
+    85%{left: 35%;}
+    90%{left: 30%;}
+    95%{left: 25%;}
+    100%{left: 20%;}
+}
+
+@keyframes slide_bottom_left {
+    0%{right: 20%;}
+    5%{right: 25%;}
+    10%{right: 30%;}
+    15%{right: 35%;}
+    20%{right: 40%;}
+    25%{right: 45%;}
+    30%{right: 50%;}
+    35%{right: 55%;}
+    40%{right: 60%;}
+    45%{right: 65%;}
+    50%{right: 69%;}
+    55%{right: 65%;}
+    60%{right: 60%;}
+    65%{right: 55%;}
+    70%{right: 50%;}
+    75%{right: 45%;}
+    80%{right: 40%;}
+    85%{right: 35%;}
+    90%{right: 30%;}
+    95%{right: 25%;}
+    100%{right: 20%;}
+}
